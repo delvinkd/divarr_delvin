@@ -178,25 +178,24 @@ class AAA extends StatelessWidget {
   const AAA ({super.key});
 
 
-
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
           body: Column(
             children: [
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                  color: Colors.red,
-                ) ,
-                  height: 100,
-                  width: 300,
-                  child:Image.network(
-                    'https://picsum.photos/250?image=887',
-                  )
+              Image.network(
+                'https://picsum.photos/250?image=887',
               ),
+              Column(
+                children: [
+                  Text('عنوان آگهی'),
+
+                ],
+              )
             ],
+
           ),
         ));
   }
